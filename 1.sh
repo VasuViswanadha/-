@@ -5,6 +5,7 @@ for x in {1..10}
 do
 echo   $x
 done
-echo -e "\nWaiting 1 second\n"
+echo -e "\nWaiting 1 second"
+echo -----------------------------
 sleep 1
 echo
