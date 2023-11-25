@@ -9,3 +9,5 @@ echo -e "\nWaiting 1 second"
 echo -----------------------------
 sleep 1
 echo
+echo
+echo
