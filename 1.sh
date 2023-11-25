@@ -8,15 +8,9 @@ done
 echo -e "\nWaiting 1 second"
 echo -----------------------------
 sleep 1
-<<<<<<< HEAD
 echo
 echo
 =======
->>>>>>> 79e350f (1)
-echo
-<<<<<<< HEAD
 echo
 echo
-=======
-Ha Ha
->>>>>>> hj
+echo
