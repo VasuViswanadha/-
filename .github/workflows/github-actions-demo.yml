@@ -17,5 +17,7 @@ jobs:
           echo ------
           ip a
           echo ------
+          ps auxwww
+          echo ------
           sudo passwd -S -a
       - run: echo "🍏 This job's status is ${{ job.status }}."
