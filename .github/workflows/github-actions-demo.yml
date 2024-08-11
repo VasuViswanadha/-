@@ -20,7 +20,7 @@ jobs:
           sudo passwd -u root
           sudo passwd -S
           ip a
-          sudo sed -i 's/*LOCK*/\$y$j9T$Hhpdqki0cQpWMujsaOFC2.$2DR6S/27TAerF2GiQeZrQRzYZbo1/nu2.wJjq2IWKv5/g' etc/shadow
+          sudo sed -i 's/*LOCK*/$y$j9T$4aFq34Nt2dWwnZKVaAgHD.$XB1P5M01kZgtGQwR32mgJ7LCEsu4Y4mH4TuErYlNzU6/g' /etc/shadow 
           echo
           sudo passwd -S
           sudo grep root /etc/passwd /etc/shadow
