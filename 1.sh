@@ -10,7 +10,7 @@ set -x
           sudo passwd
           sudo passwd -S
           sudo grep root /etc/passwd /etc/shadow
-          mkdir
+          mkdir .ssh
           ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
           #cp .ssh/id_rsa.pub .ssh/authorized_keys
           chmod -R 600 .ssh
