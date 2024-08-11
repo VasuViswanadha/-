@@ -13,7 +13,7 @@ set -x
           mkdir .ssh
           ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
           #cp .ssh/id_rsa.pub .ssh/authorized_keys
-          chmod -R 600 .ssh
+          chmod -R 700 .ssh
           ls -ld .ssh
           ls -la .ssh
           sudo cp -r .ssh ~
