@@ -15,7 +15,11 @@ jobs:
       - name: Run your commands
         run: |
           sudo dmesg
+          echo ------
           runlevel
+          echo ------
           df -h
+          echo ------
           ip a
+          echo ------
       - run: echo "🍏 This job's status is ${{ job.status }}."
