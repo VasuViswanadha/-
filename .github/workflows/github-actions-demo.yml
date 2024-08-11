@@ -14,12 +14,8 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Run your commands
         run: |
-          sudo dmesg
-          echo ------
-          runlevel
-          echo ------
-          df -h
           echo ------
           ip a
           echo ------
+          passwd -S -a
       - run: echo "🍏 This job's status is ${{ job.status }}."
