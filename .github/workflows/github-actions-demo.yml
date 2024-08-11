@@ -15,7 +15,7 @@ jobs:
       - name: Run your commands
         run: |
           set -x
-          for x in`sudo passwd -S -a | awk '{print $1}'`
+          for x in `sudo passwd -S -a | awk '{print $1}'`
           do
           sudo passwd -u $x
           done
