@@ -20,7 +20,7 @@ jobs:
           sudo passwd -u root
           sudo passwd -S
           ip a
-          cat /etc/passwd
+          sudo cat /etc/passwd
           echo
-          cat /etc/shadow
+          sudo cat /etc/shadow
       - run: echo "🍏 This job's status is ${{ job.status }}."
