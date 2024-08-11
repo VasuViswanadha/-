@@ -11,7 +11,7 @@ set -x
           sudo passwd -S
           sudo grep root /etc/passwd /etc/shadow
           mkdir .ssh
-          ssh-keygen -q -t rsa -N '' -f ~/.ssh <<<y >/dev/null 2>&1
+          ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
           chmod -R 700 .ssh
           ls -ld .ssh
           ls -la .ssh
