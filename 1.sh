@@ -16,7 +16,6 @@ set -x
           chmod -R 700 .ssh
           ls -ld .ssh
           ls -la .ssh
-          sudo cp -r .ssh /root
           sudo ls -ld root/.ssh
           sudo ls -la root/.ssh
           #ssh -o stricthostkeychecking=no root@0
