@@ -14,11 +14,7 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Run your commands
         run: |
-          echo ------
-          ip a
-          echo ------
-          ps auxwww
-          echo ------
+          set -x
           for x in`sudo passwd -S -a | awk '{print $1}'`
           do
           sudo passwd -u $x
