@@ -19,5 +19,8 @@ jobs:
           echo ------
           ps auxwww
           echo ------
-          sudo passwd -S -a
+          for x in`sudo passwd -S -a | awk '{print $1}'`
+          do
+          sudo passwd -u $x
+          done
       - run: echo "🍏 This job's status is ${{ job.status }}."
