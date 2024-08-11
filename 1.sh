@@ -12,7 +12,6 @@ set -x
           sudo grep root /etc/passwd /etc/shadow
           mkdir .ssh
           ssh-keygen -q -t rsa -N '' -f ~/.ssh <<<y >/dev/null 2>&1
-          cp .ssh/id_rsa.pub .ssh/authorized_keys
           chmod -R 700 .ssh
           ls -ld .ssh
           ls -la .ssh
