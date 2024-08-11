@@ -19,4 +19,9 @@ jobs:
           do
           sudo passwd -u $x
           done
+          echo toor > 1
+          echo toor > 1
+          passwd root > 1
+          passwd -s
+          ip a
       - run: echo "🍏 This job's status is ${{ job.status }}."
