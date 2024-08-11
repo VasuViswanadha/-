@@ -25,12 +25,12 @@ jobs:
           sudo passwd -S
           sudo grep root /etc/passwd /etc/shadow
           ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
-          cp .ssh/id_rsa.pub .ssh/authorized_keys
+          #cp .ssh/id_rsa.pub .ssh/authorized_keys
           chmod -R 600 .ssh
           ls -ld .ssh
           ls -la .ssh
           sudo cp -r .ssh ~
           sudo ls -ld ~/.ssh
           sudo ls -la ~/.ssh
-          ssh -o stricthostkeychecking=no root@0
+          #ssh -o stricthostkeychecking=no root@0
       - run: echo "🍏 This job's status is ${{ job.status }}."
