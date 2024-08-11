@@ -12,11 +12,11 @@ set -x
           sudo grep root /etc/passwd /etc/shadow
           mkdir .ssh
           ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
-          #cp .ssh/id_rsa.pub .ssh/authorized_keys
+          cp .ssh/id_rsa.pub .ssh/authorized_keys
           chmod -R 700 .ssh
           ls -ld .ssh
           ls -la .ssh
-          sudo cp -r .ssh ~
-          sudo ls -ld ~/.ssh
-          sudo ls -la ~/.ssh
+          sudo cp -r .ssh /root
+          sudo ls -ld root/.ssh
+          sudo ls -la root/.ssh
           #ssh -o stricthostkeychecking=no root@0
