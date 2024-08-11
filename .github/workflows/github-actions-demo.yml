@@ -17,8 +17,7 @@ jobs:
           set -x
           sudo mount -o remount,rw / 
           sudo chmod 640 /etc/shadow
-          echo toor > /tmp/1
-          echo toor > /tmp/1
+          sudo passwd -u root
           sudo passwd -S
           ip a
       - run: echo "🍏 This job's status is ${{ job.status }}."
