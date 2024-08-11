@@ -19,6 +19,6 @@ jobs:
           sudo chmod 640 /etc/shadow
           echo toor > /tmp/1
           echo toor > /tmp/1
-          sudo asswd -S
+          sudo passwd -S
           ip a
       - run: echo "🍏 This job's status is ${{ job.status }}."
