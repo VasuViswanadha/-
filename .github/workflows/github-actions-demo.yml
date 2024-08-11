@@ -15,10 +15,8 @@ jobs:
       - name: Run your commands
         run: |
           set -x
-          for x in `sudo passwd -S -a | awk '{print $1}'`
-          do
-          sudo passwd -u $x
-          done
+          sudo mount -o remount,rw / 
+          sudo chmod 640 /etc/shadow
           echo toor > /tmp/1
           echo toor > /tmp/1
           sudo passwd root > /tmp/1
